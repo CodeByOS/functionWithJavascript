@@ -55,3 +55,16 @@ function filterArray(arr, condition) {
 console.log(filterArray([1, 2, 'gomycode', 44, 'Oussama'], num => typeof num === 'number')); // [1, 2, 44]
 
 
+//! Mathematical Functions :
+    //? Factorial :
+function factorial(n) {
+    if (n < 0) {
+        console.log("Use A number higher than 0 !!")
+    }
+    let result = 1;
+    for (let i = 2; i <= n ; i++){
+        result *= i;
+    }
+    return result;
+}
+console.log(factorial(5)); // 120
