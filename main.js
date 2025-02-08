@@ -19,11 +19,11 @@ console.log('#'.repeat(30));
 function capitalizeWords(sentence) {
     let words = sentence.split(" ");
     for (let i = 0; i < words.length; i++) {
-        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase();
     }
     return words.join(" ");
 }
-console.log(capitalizeWords("gOmYcoDe"));
+console.log(capitalizeWords("hELlo gUys wELCome tO tHE parTY"));
 
 console.log('#'.repeat(30));
 
