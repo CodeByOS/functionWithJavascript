@@ -72,3 +72,34 @@ function factorial(n) {
     return result;
 }
 console.log(factorial(5)); // 120
+
+console.log('#'.repeat(30));
+
+    //? Prime Number Check Function 
+function isPrime(num) {
+    if (num < 2) return false;
+    for (let i = 2 ; i <= Math.sqrt(num) ; i++ ) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+console.log(isPrime(7)); //true
+console.log(isPrime(12)); //false
+
+console.log('#'.repeat(30));
+
+    //? Fibonacci Sequence
+function fibonacci(n) {
+    let sq = [];
+    if (n <= 0) return sq;
+    if (n >= 1) sq.push(0);
+    if (n >= 2) sq.push(1);
+
+    for (let i =2 ; i < n ; i++) {
+        sq.push(sq[i - 1] + sq[i - 2]);
+    }
+    return sq;
+}
+
+console.log(fibonacci(10));
